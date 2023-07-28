@@ -1,0 +1,41 @@
+body {
+    background-color: #444;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.content div{
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.content div img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.content div:hover img {
+    transform: scale(1.2);
+}
+
+.content div .tittle-box {
+    content: "";
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0));
+    z-index: 1;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+}
